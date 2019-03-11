@@ -1,1 +1,9 @@
-
+If Cells (i,3). Value < 1 Then
+  If Cells(i,1).Value <> "" And Cells (i+1,1).Value = "" Then
+    Cells (i,1).Copy
+    Cells (i+1,1).PasteSpecial
+  End If
+  Rows(i).Delete
+  If i>1 Then i = i-1
+    Else i = 1
+End If 
